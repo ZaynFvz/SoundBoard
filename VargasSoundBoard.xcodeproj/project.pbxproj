@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4234E9E2A1E575700EFF3F9 /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4234E9D2A1E575700EFF3F9 /* SoundViewController.swift */; };
 		F47183392A1E49E20021CA48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47183382A1E49E20021CA48 /* AppDelegate.swift */; };
 		F471833B2A1E49E20021CA48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F471833A2A1E49E20021CA48 /* SceneDelegate.swift */; };
 		F471833D2A1E49E20021CA48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F471833C2A1E49E20021CA48 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F4234E9D2A1E575700EFF3F9 /* SoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
 		F47183352A1E49E20021CA48 /* VargasSoundBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VargasSoundBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47183382A1E49E20021CA48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F471833A2A1E49E20021CA48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				F47183462A1E49E70021CA48 /* LaunchScreen.storyboard */,
 				F47183492A1E49E70021CA48 /* Info.plist */,
 				F47183412A1E49E30021CA48 /* VargasSoundBoard.xcdatamodeld */,
+				F4234E9D2A1E575700EFF3F9 /* SoundViewController.swift */,
 			);
 			path = VargasSoundBoard;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				F47183392A1E49E20021CA48 /* AppDelegate.swift in Sources */,
 				F47183432A1E49E30021CA48 /* VargasSoundBoard.xcdatamodeld in Sources */,
 				F471833B2A1E49E20021CA48 /* SceneDelegate.swift in Sources */,
+				F4234E9E2A1E575700EFF3F9 /* SoundViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
