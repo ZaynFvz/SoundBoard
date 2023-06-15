@@ -91,7 +91,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTB-WW-GI6">
-                                <rect key="frame" x="162.5" y="373.5" width="89" height="31"/>
+                                <rect key="frame" x="162.5" y="454.5" width="89" height="31"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="AGREGAR">
@@ -101,21 +101,47 @@
                                     <action selector="agregarTapped:" destination="mVu-bi-og8" eventType="touchUpInside" id="r2a-JZ-kA3"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiempo de Duración:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEn-6f-Zt1">
+                                <rect key="frame" x="20" y="383.5" width="374" height="21"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGW-s5-Gf3">
+                                <rect key="frame" x="40" y="424.5" width="334" height="0.0"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="b6R-g2-Sp8">
+                                <rect key="frame" x="148" y="513" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lT3-Ct-Gc3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="MTB-WW-GI6" firstAttribute="top" secondItem="gSD-sY-24R" secondAttribute="bottom" constant="20" id="39P-dZ-c3i"/>
+                            <constraint firstItem="MTB-WW-GI6" firstAttribute="top" secondItem="UGW-s5-Gf3" secondAttribute="bottom" constant="30" id="2si-rd-CM6"/>
+                            <constraint firstItem="dEn-6f-Zt1" firstAttribute="centerX" secondItem="hrU-b2-NYn" secondAttribute="centerX" id="70y-qd-nAG"/>
+                            <constraint firstItem="UGW-s5-Gf3" firstAttribute="centerX" secondItem="hrU-b2-NYn" secondAttribute="centerX" id="DHT-ey-hEI"/>
                             <constraint firstItem="D4Q-3O-pJl" firstAttribute="top" secondItem="lT3-Ct-Gc3" secondAttribute="top" constant="20" id="GWz-kx-JUw"/>
                             <constraint firstItem="gw8-ht-Hng" firstAttribute="centerX" secondItem="hrU-b2-NYn" secondAttribute="centerX" id="K5D-47-cq7"/>
                             <constraint firstItem="nl5-M8-xA2" firstAttribute="centerX" secondItem="hrU-b2-NYn" secondAttribute="centerX" id="Kfl-hR-SRX"/>
                             <constraint firstItem="gw8-ht-Hng" firstAttribute="leading" secondItem="lT3-Ct-Gc3" secondAttribute="leading" constant="20" id="NA9-Md-T63"/>
+                            <constraint firstItem="dEn-6f-Zt1" firstAttribute="top" secondItem="gSD-sY-24R" secondAttribute="bottom" constant="30" id="OUH-gQ-a3i"/>
+                            <constraint firstItem="lT3-Ct-Gc3" firstAttribute="trailing" secondItem="UGW-s5-Gf3" secondAttribute="trailing" constant="40" id="P92-l3-8HG"/>
                             <constraint firstItem="gSD-sY-24R" firstAttribute="leading" secondItem="lT3-Ct-Gc3" secondAttribute="leading" constant="20" id="QSd-QO-t93"/>
+                            <constraint firstItem="UGW-s5-Gf3" firstAttribute="top" secondItem="dEn-6f-Zt1" secondAttribute="bottom" constant="20" id="Qrf-Ph-kZr"/>
                             <constraint firstItem="gw8-ht-Hng" firstAttribute="top" secondItem="nl5-M8-xA2" secondAttribute="bottom" constant="30" id="RfD-8q-i0p"/>
                             <constraint firstItem="nl5-M8-xA2" firstAttribute="top" secondItem="D4Q-3O-pJl" secondAttribute="bottom" constant="20" id="Vz2-O5-EPc"/>
                             <constraint firstItem="lT3-Ct-Gc3" firstAttribute="trailing" secondItem="gw8-ht-Hng" secondAttribute="trailing" constant="20" id="iN7-DQ-Y9f"/>
                             <constraint firstItem="gSD-sY-24R" firstAttribute="centerX" secondItem="hrU-b2-NYn" secondAttribute="centerX" id="iy5-vc-7JZ"/>
                             <constraint firstItem="gSD-sY-24R" firstAttribute="top" secondItem="gw8-ht-Hng" secondAttribute="bottom" constant="20" id="j9P-B9-bBD"/>
+                            <constraint firstItem="dEn-6f-Zt1" firstAttribute="leading" secondItem="lT3-Ct-Gc3" secondAttribute="leading" constant="20" id="jwf-I1-3c9"/>
+                            <constraint firstItem="UGW-s5-Gf3" firstAttribute="leading" secondItem="lT3-Ct-Gc3" secondAttribute="leading" constant="40" id="lfs-LY-pLB"/>
+                            <constraint firstItem="lT3-Ct-Gc3" firstAttribute="trailing" secondItem="dEn-6f-Zt1" secondAttribute="trailing" constant="20" id="tjz-Za-1MO"/>
                             <constraint firstItem="D4Q-3O-pJl" firstAttribute="centerX" secondItem="hrU-b2-NYn" secondAttribute="centerX" id="uDC-s4-r9w"/>
                             <constraint firstItem="MTB-WW-GI6" firstAttribute="centerX" secondItem="hrU-b2-NYn" secondAttribute="centerX" id="wD4-0i-Ssg"/>
                             <constraint firstItem="lT3-Ct-Gc3" firstAttribute="trailing" secondItem="gSD-sY-24R" secondAttribute="trailing" constant="20" id="wYw-vA-vSP"/>
@@ -124,9 +150,11 @@
                     <navigationItem key="navigationItem" id="Bz9-je-7xz"/>
                     <connections>
                         <outlet property="agregarButton" destination="MTB-WW-GI6" id="nbR-jZ-2bg"/>
-                        <outlet property="grabarButton" destination="D4Q-3O-pJl" id="k0M-Nz-aBb"/>
+                        <outlet property="duracionLabel" destination="UGW-s5-Gf3" id="Qdz-6q-ELJ"/>
+                        <outlet property="grabarButton" destination="D4Q-3O-pJl" id="0sX-2W-PQ9"/>
                         <outlet property="nombreTextField" destination="gSD-sY-24R" id="aQ1-6H-Nbc"/>
                         <outlet property="reproducirButton" destination="nl5-M8-xA2" id="Rje-QC-TkP"/>
+                        <outlet property="volumenSlider" destination="b6R-g2-Sp8" id="leg-oD-3Zp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GnR-oO-CFX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -166,6 +194,9 @@
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

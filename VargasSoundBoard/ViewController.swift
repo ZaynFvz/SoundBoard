@@ -16,7 +16,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         let grabacion = grabaciones[indexPath.row]
-        cell.textLabel?.text = grabacion.nombre
+        if let nombre = grabacion.nombre, let duracion = grabacion.duracion {
+            cell.textLabel?.text = "\(nombre) - \(duracion)"
+        }
         return cell
     }
     
@@ -24,6 +26,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var grabaciones:[Grabacion] = []
     var reproducirAudio:AVAudioPlayer?
+    var volumen: Float = 1.0
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,11 +38,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewWillAppear(_ animated: Bool) {
         let context = (UIApplication.shared.delegate as!
             AppDelegate).persistentContainer.viewContext
-        do{
-            grabaciones = try
-                context.fetch(Grabacion.fetchRequest())
+        do {
+            grabaciones = try context.fetch(Grabacion.fetchRequest())
+                    
             tablaGrabaciones.reloadData()
-        }catch{}
+        } catch {
+            print("Error al cargar las grabaciones: \(error)")
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
