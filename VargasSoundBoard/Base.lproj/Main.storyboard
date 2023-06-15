@@ -115,10 +115,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="b6R-g2-Sp8">
-                                <rect key="frame" x="148" y="513" width="118" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lT3-Ct-Gc3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -154,7 +150,6 @@
                         <outlet property="grabarButton" destination="D4Q-3O-pJl" id="0sX-2W-PQ9"/>
                         <outlet property="nombreTextField" destination="gSD-sY-24R" id="aQ1-6H-Nbc"/>
                         <outlet property="reproducirButton" destination="nl5-M8-xA2" id="Rje-QC-TkP"/>
-                        <outlet property="volumenSlider" destination="b6R-g2-Sp8" id="leg-oD-3Zp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GnR-oO-CFX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
